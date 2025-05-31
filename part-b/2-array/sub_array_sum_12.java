@@ -1,15 +1,9 @@
-import java.util.*;
 
-public class array {
-    public static void subArraySumPrefix(int numbers[]) {
-        int currSum = 0;
+public class sub_array_sum_12 {
+    public static void subArraySum(int numbers[]) {
 
         int maxSum = Integer.MIN_VALUE;
 
-        int prefix[] = new int[numbers.length];
-        for (int i = 0; i < prefix.length; i++) {
-            prefix[i] = prefix[i - 1] + numbers[i];
-        }
         System.out.println(maxSum);
         for (int start = 0; start < numbers.length; start++) {
             System.out.println("start " + start);
@@ -35,6 +29,6 @@ public class array {
 
     public static void main(String args[]) {
         int numbers[] = { 1, -2, 6, -1, 3 };
-        subArraySumPrefix(numbers);
+        subArraySum(numbers);
     }
 }
